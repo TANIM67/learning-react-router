@@ -9,6 +9,8 @@ const Header = () => {
             <Link to={"about"}>About Me</Link>
             <Link to={"contact"}>Contact Me</Link>
             <Link to={"app"}>App</Link>
+            <Link to={"user"}>User</Link>
+            <Link to={"user2"}>User2</Link>
         </div>
     );
 };
