@@ -1,12 +1,14 @@
 import React, { use } from 'react';
 import { useLoaderData } from 'react-router';
+import UserDetails from '../UserDetails/UserDetails';
 
 const User = () => {
-    const user = useLoaderData();
-    console.log(user);
+    const users = useLoaderData();
     return (
         <div>
-            <h2>This is user data showing without using suspense</h2>
+            {
+                users.map(user => <UserDetails key = {user.id} user = {user}></UserDetails>)
+            }
         </div>
     );
 };
